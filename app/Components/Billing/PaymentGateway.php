@@ -1,6 +1,6 @@
 <?php
 
-namespace Just/Test\Billing;
+namespace Nrn\Components\Billing;
 
 interface PaymentGateway
 {

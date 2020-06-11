@@ -1,12 +1,12 @@
 <?php
 
 
-namespace App\Billing;
+namespace Nrn\Components\Billing;
 
 
 use Illuminate\Support\Str;
 
-class BankPaymentGateway implements PaymentGateway
+class EsewaPaymentGateway implements PaymentGateway
 {
     private $currency;
     private $discount=0;
@@ -23,10 +23,11 @@ class BankPaymentGateway implements PaymentGateway
         return[
           'amount'=>$amount,
           'discount'=>$this->discount,
-           'total'=>$amount- $this->discount,
+            'total'=>$amount- $this->discount,
           'code'=>Str::random(),
-           'currency' => $this->currency,
-            'via'=>'Bank',
+            'currency' => $this->currency,
+            'via'=>'Esewa',
+            'cashback'=>$amount*0.02,
         ];
     }
 

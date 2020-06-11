@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Providers;
+namespace Nrn\Providers;
 
-use App\Brand;
-use App\Catagory;
-use App\Product;
+use Nrn\Brand;
+use Nrn\Catagory;
+use Nrn\Product;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;

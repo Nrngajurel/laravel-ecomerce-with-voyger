@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Nrn\Console\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;

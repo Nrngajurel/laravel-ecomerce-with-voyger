@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Repos;
+namespace Nrn\Repos;
 
 
-use App\Components\DataFilters\ProductDataFilter;
-use App\Product;
+use Nrn\Components\DataFilters\ProductDataFilter;
+use Nrn\Product;
 use Illuminate\Database\Eloquent\Model;
 
 class ProductRepository extends Repository

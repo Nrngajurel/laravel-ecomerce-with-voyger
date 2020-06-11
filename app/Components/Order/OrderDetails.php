@@ -1,6 +1,6 @@
 <?php
-namespace Just/Test\Order;
-use Just/Test\Billing\PaymentGateway;
+namespace Nrn\Components\Order;
+use Nrn\Components\Billing\PaymentGateway;
 
 class OrderDetails
 {

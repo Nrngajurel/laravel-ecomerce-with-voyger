@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Components\DataFilters;
+namespace Nrn\Components\DataFilters;
 
 
 class ProductDataFilter extends Datafilter

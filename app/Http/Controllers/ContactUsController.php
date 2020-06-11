@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Nrn\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Nrn\Http\Requests\ContactRequest;
 
 class ContactUsController extends Controller
 {
@@ -32,9 +33,9 @@ class ContactUsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContactRequest $request)
     {
-        //
+        dd($request->name);
     }
 
     /**

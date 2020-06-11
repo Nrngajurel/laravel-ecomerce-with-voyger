@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Components\DataFilters;
+namespace Nrn\Components\DataFilters;
 
 
 use Illuminate\Database\Eloquent\Builder;

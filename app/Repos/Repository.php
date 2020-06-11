@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Repos;
+namespace Nrn\Repos;
 
 
-use App\Components\DataFilters\Datafilter;
+use Nrn\Components\DataFilters\Datafilter;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class Repository

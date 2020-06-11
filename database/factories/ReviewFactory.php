@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(Just/Test\Review::class, function (Faker $faker) {
+$factory->define(Nrn\Review::class, function (Faker $faker) {
     return [
         //
     ];

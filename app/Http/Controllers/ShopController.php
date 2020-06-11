@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Nrn\Http\Controllers;
 
-use App\Catagory;
-use App\Product;
-use App\Repos\ProductRepository;
-use Illuminate\Http\Request;
+use Nrn\Product;
+use Nrn\Repos\ProductRepository;
 
 class ShopController extends Controller
 {

@@ -28,7 +28,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "Nrn\\": "app/"
         }
     },
     "autoload-dev": {
@@ -62,6 +62,10 @@
         "hooks": {
             "type": "composer",
             "url": "https://larapack.io"
+        },
+        "Gajureal": {
+            "type": "path",
+            "url": "hooks/Gajureal"
         }
     }
 }

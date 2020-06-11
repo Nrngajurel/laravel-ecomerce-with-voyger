@@ -1,11 +1,11 @@
 <?php
 
-namespace Just/Test\Http\Controllers\Voyager;
+namespace Nrn\Http\Controllers\Voyager;
 
-use Just/Test\Catagory;
+use Nrn\Catagory;
 
-use Just/Test\CatagoryProduct;
-use Just/Test\Product;
+use Nrn\CatagoryProduct;
+use Nrn\Product;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;

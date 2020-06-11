@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace Nrn;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Catagory extends Model
 {
     public function products(){
-        return $this->belongsToMany('Just/Test\Product');
+        return $this->belongsToMany(Product::class);
     }
 }

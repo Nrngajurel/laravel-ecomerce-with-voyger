@@ -33,7 +33,7 @@
                         <div class="col-sm-3 ">
                             <h1>esewa</h1>
                             <img style="width: inherit;" src="{{ asset('e-commerce/esewa.png') }}" alt="">
-                            <form action = "https://uat.esewa.com.np/epay/main" method="POST">
+                            <form action = "{{ config('market.esewa.esewa_url') }}" method="POST">
                                 <input value="{{ Cart::total() }}" name="tAmt" type="hidden">
                                 <input value="{{ Cart::subtotal() }}" name="amt" type="hidden">
                                 <input value="{{ Cart::tax() }}" name="txAmt" type="hidden">
@@ -41,8 +41,8 @@
                                 <input value="0" name="pdc" type="hidden">
                                 <input value="" name="scd" type="hidden">
                                 <input value="PRD-01" name="pid" type="hidden">
-                                <input value="http://127.0.0.1:8000/success.php/?q=su" type="hidden" name="su">
-                                <input value="http://127.0.0.1:8000/failure.php/?q=fu" type="hidden" name="fu">
+                                <input value="{{ route('payment.success') }}" type="hidden" name="su">
+                                <input value="{{ route('payment.failure') }}" type="hidden" name="fu">
                                 <input value="Pay Now" type="submit" class="btn btn-primary">
                             </form>
 

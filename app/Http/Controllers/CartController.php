@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Nrn\Http\Controllers;
 
 use Gloudemans\Shoppingcart\Facades\Cart;
 use http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Nrn\Product;
 
 class CartController extends Controller
 {
@@ -16,6 +17,7 @@ class CartController extends Controller
      */
     public function index()
     {
+//        dd(Cart::content());
 
 
         return view('public.cart');
@@ -42,7 +44,7 @@ class CartController extends Controller
         $quantity= $request->quantity ?? 1;
 
         Cart::add($request->id, $request->name, $quantity, $request->price)
-            ->associate('Just/Test\Product');
+            ->associate(Product::class);
         return back()->with(['message'=>'item added successfully']);
 //        return response()->json('item added successfully');
     }
@@ -74,7 +76,7 @@ class CartController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(Request $request, $id)
     {
@@ -88,7 +90,7 @@ class CartController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {

@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(Just/Test\User::class, function (Faker $faker) {
+$factory->define(Nrn\User::class, function (Faker $faker) {
     static $password;
 
     return [

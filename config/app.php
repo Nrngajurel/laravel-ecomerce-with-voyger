@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Nrn Market'),
 
     /*
     |--------------------------------------------------------------------------
@@ -172,12 +172,12 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        App\Providers\ViewServiceProvider::class,
+        Nrn\Providers\AppServiceProvider::class,
+        Nrn\Providers\AuthServiceProvider::class,
+        // Nrn\Providers\BroadcastServiceProvider::class,
+        Nrn\Providers\EventServiceProvider::class,
+        Nrn\Providers\RouteServiceProvider::class,
+        Nrn\Providers\ViewServiceProvider::class,
 
     ],
 

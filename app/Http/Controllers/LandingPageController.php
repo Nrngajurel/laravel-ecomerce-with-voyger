@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Repos\ProductRepository;
+namespace Nrn\Http\Controllers;
+use Nrn\Repos\ProductRepository;
 class LandingPageController extends Controller
 {
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Nrn\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;

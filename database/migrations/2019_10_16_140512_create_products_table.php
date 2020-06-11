@@ -21,8 +21,10 @@ class CreateProductsTable extends Migration
             $table->string('short_description')->nullable();
             $table->integer('price');
             $table->boolean('on_sale')->nullable();
-
+            $table->string('on_stock');
             $table->text('description');
+            $table->bigInteger('brand_id')->unsigned()->index()->nullable();
+//            $table->foreign('brand_id')->references('id')->on('Brands')->onDelete('set null');
             $table->timestamps();
         });
     }
